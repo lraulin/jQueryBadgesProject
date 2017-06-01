@@ -10,7 +10,7 @@ $(function() {
           var title = response.courses.completed[i].title;
           var url = response.courses.completed[i].url;
           var badge = response.courses.completed[i].badge;
-          $("#badges").append('<div class="course"><h3>' + title + '</h3><img src="' + badge + '" href="' + url + '"></div>');
+          $("#badges").append('<div class="course"><h3>' + title + '</h3><img src="' + badge + '"><a href="' + url + '" target="_blank" class="btn btn-primary">See Course</a></div>');
         }
       }
     });
